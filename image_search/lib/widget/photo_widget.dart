@@ -5,7 +5,10 @@ import '../model/Photo.dart';
 class PhotoWidget extends StatelessWidget {
   final Photo photo;
 
-  const PhotoWidget({super.key, required this.photo});
+  const PhotoWidget({
+    super.key,
+    required this.photo,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -14,12 +17,9 @@ class PhotoWidget extends StatelessWidget {
         borderRadius: const BorderRadius.all(Radius.circular(12)),
         image: DecorationImage(
           fit: BoxFit.cover,
-          image: NetworkImage(
-              photo.previewURL
-          ),
+          image: NetworkImage(photo.previewURL),
         ),
       ),
     );
-    ;
   }
 }
