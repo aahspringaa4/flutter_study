@@ -14,9 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: PhotoProvider(
-      api: PixabayApi(),
-      child: const HomeScreen(),
-    ));
+      home: PhotoProvider(
+        api: PixabayApi(),
+        child: const HomeScreen(),
+      ),
+    );
   }
 }

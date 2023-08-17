@@ -6,7 +6,6 @@ import 'package:image_search/data/pixabayapi.dart';
 import '../model/Photo.dart';
 
 class PhotoProvider extends InheritedWidget {
-
   final PixabayApi api;
   final _photoStreamController = StreamController<List<Photo>>()..add([]);
   Stream<List<Photo>> get photoStream => _photoStreamController.stream;
@@ -19,7 +18,7 @@ class PhotoProvider extends InheritedWidget {
 
   static PhotoProvider of(BuildContext context) {
     final PhotoProvider? result =
-      context.dependOnInheritedWidgetOfExactType<PhotoProvider>();
+        context.dependOnInheritedWidgetOfExactType<PhotoProvider>();
     assert(result != null, 'NO PIXABAYAPI');
     return result!;
   }

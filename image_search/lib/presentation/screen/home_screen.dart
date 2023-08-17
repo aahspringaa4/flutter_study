@@ -6,7 +6,7 @@ import 'package:image_search/model/Photo.dart';
 
 class HomeScreen extends StatefulWidget {
 
-  const HomeScreen({
+  const  HomeScreen({
     super.key
   });
 
